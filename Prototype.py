@@ -1,6 +1,7 @@
 import os
 import time
 import logging
+import subprocess
 
 ip_list = ['10.35.38.2', '10.35.38.1', '10.35.38.10', '10.35.38.11', '10.35.38.4']
 i = 0
@@ -42,3 +43,4 @@ else:
     miss = len(ip_list) - i
     length = len(ip_list)
     print(f"Finished with {miss} out of {length} host(s) down.")
+subprocess.run(["powershell", "-NoProfile", "-Command", 'Test-NetConnection 142.250.190.78 -p 4345'])
