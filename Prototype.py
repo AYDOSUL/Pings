@@ -6,7 +6,7 @@ ip_list = ['10.35.38.2', '10.35.38.1', '10.35.38.10', '10.35.38.11', '10.35.38.4
 i = 0
 ip_wports = ['10.35.38.10','10.35.38.11']
 ip_ports = ['1182', '1182']
-port_dict = dict(zip(ip_wports, ip_ports))
+port_dict = dict(zip(ip_wports, ip_ports)) #Port Dict
 
 logging.basicConfig(format="{asctime} - {levelname} - {message}", style="{", datefmt="%Y-%m-%d %H:%M",)
 
